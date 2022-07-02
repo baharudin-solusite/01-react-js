@@ -16,7 +16,7 @@ function App() {
   // conditional
   const isLogin = true
 
-  // map
+  // Map
   const data = [
    {
     orang:"aurel",
@@ -52,6 +52,7 @@ function App() {
           {/* Event */}
         {/* Pembuatan Button secara inlane */}
         <button onClick={() => console.log("inlane Button")}>Inlane Button</button>     
+        <button onClick={() => console.log("ayam goreng")}>tekan</button>
         {/* pembuattan button secara internal */}
         <button onClick={handleClick}>Tes</button>
         {/* checkbox */}
@@ -61,7 +62,7 @@ function App() {
 
 
         {/* conditional */}
-        {/* codisional yang bisa dipakai pada React Js Ternari operator */}
+        {/* satu - satunya codisional yang bisa dipakai pada React Js Ternary operator */}
         {isLogin ? <p>sudah login</p> : <p>belum login</p> }
         {/* maping menampilkan Array of object */}
         {data.map ((item,index) => ( 
