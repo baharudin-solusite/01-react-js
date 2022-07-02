@@ -8,9 +8,7 @@ function App() {
   // tempat membuat Variabel sebelum return
   let pulang = "ke kampung halaman";
   const perkalian = 9 * 9;
-  // const Click = () => {
-  //   console.log("ayam")
-  // }
+  // event internal
   const handleClick = () => {
     console.log("burung hantu")
   }
@@ -33,11 +31,12 @@ function App() {
     // react membutuhkan pembunggkus untuk parentnya
     <div className="App">
       <header className="App-header">
-        <SelamatDatang/>  
-      
-        {/* url gambar src */}
-        <img width={400} src="https://rimbakita.com/wp-content/uploads/2019/01/burung-hantu.jpg" alt='Burung Hantu'/>
+        <SelamatDatang/> 
         <SelamatMalam/>
+      
+        {/* url image */}
+        <img width={400} src="https://rimbakita.com/wp-content/uploads/2019/01/burung-hantu.jpg" alt='Burung Hantu'/>
+        {/* local image */}
         <img width={400} src={BurungHatu} alt='Burung Hantu'/>
         {/* Penggunaan class pada React yaitu menggunakan ClassName */}
         <h1 className='nama'>Baharudin</h1>
